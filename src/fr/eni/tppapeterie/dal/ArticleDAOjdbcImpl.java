@@ -62,7 +62,7 @@ public class ArticleDAOjdbcImpl implements ArticleDAO {
              Statement etat = connection.createStatement())
         {
             // Requête SQL afin de sélectionner un article dans la BDD
-            sql = "SELECT idArticle, reference, marque, designation, prixUnitaire, qteStock, grammage, couleur, type FROM Articles WHERE idArticle" +id+ ";";
+            sql = "SELECT idArticle, reference, marque, designation, prixUnitaire, qteStock, grammage, couleur, type FROM Articles WHERE idArticle = " +id+ ";";
             // Execution du SELECT...
             rs = etat.executeQuery(sql);
             // ...A chaque ligne
@@ -78,7 +78,7 @@ public class ArticleDAOjdbcImpl implements ArticleDAO {
                             rs.getInt("qteStock"),
                             rs.getInt("grammage")
                     );
-                // Si c'est une ramette
+                    // Si c'est une ramette
                 } if (rs.getString("type").trim().equalsIgnoreCase("Stylo")) {
                     articleById = new Stylo(
                             rs.getInt("idArticle"),
