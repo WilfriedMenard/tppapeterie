@@ -127,7 +127,7 @@ public class ArticleDAOjdbcImpl implements ArticleDAO {
 
         // Exception si la requête SQL est erronée
         } catch (SQLException e) {
-            System.out.println(e.getMessage());;
+            System.out.println(e.getMessage());
         }
     }
 
