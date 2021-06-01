@@ -108,25 +108,21 @@ public class GUI extends JFrame {
             panneauTextField.add(getFieldPrix(), gbc);
             // Ajout des panneaux secondaires
             // Ligne Type
-            gbc.insets = new Insets(5, 5, 5, 5);
             gbc.gridx = 0;
             gbc.gridy = 5;
             gbc.gridwidth = 2;
             panneauTextField.add(getPanneauType(), gbc);
             // Ligne Grammage
-            gbc.insets = new Insets(5, 5, 5, 5);
             gbc.gridx = 0;
             gbc.gridy = 6;
             gbc.gridwidth = 2;
             panneauTextField.add(getPanneauGrammage(), gbc);
             // Ligne Couleur
-            gbc.insets = new Insets(5, 5, 5, 5);
             gbc.gridx = 0;
             gbc.gridy = 7;
             gbc.gridwidth = 2;
             panneauTextField.add(getPanneauCouleur(), gbc);
             // Ligne des 5 boutons
-            gbc.insets = new Insets(5, 5, 5, 5);
             gbc.gridx = 0;
             gbc.gridy = 8;
             gbc.gridwidth = 5;
@@ -142,7 +138,7 @@ public class GUI extends JFrame {
             panneauType.setLayout(new GridBagLayout());
             GridBagConstraints gbc = new GridBagConstraints();
             // Mise en place du Label
-            gbc.insets = new Insets(5, 5, 5, 5);
+            gbc.insets = new Insets(5, 5, 5, 85);
             gbc.gridx = 0;
             gbc.gridy = 0;
             panneauType.add(getTypeArticle(), gbc);
@@ -173,7 +169,7 @@ public class GUI extends JFrame {
             panneauGrammage = new JPanel();
             panneauGrammage.setLayout(new GridBagLayout());
             GridBagConstraints gbc = new GridBagConstraints();
-            gbc.insets = new Insets(5, 5, 5, 5);
+            gbc.insets = new Insets(5, 5, 5, 65);
             gbc.gridx = 0;
             gbc.gridy = 0;
             panneauGrammage.add(getGrammage(), gbc);
@@ -204,7 +200,7 @@ public class GUI extends JFrame {
             panneauComboBox = new JPanel();
             panneauComboBox.setLayout(new GridBagLayout());
             GridBagConstraints gbc = new GridBagConstraints();
-            gbc.insets = new Insets(5, 5, 5, 5);
+            gbc.insets = new Insets(5, 5, 5, 80);
             gbc.gridx = 0;
             gbc.gridy = 0;
             panneauComboBox.add(getCouleur(), gbc);
